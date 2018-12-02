@@ -19,7 +19,7 @@
 .env.production.local
 
 # Firebase config
-hoverboardConfig.js
+fireblogConfig.js
 
 npm-debug.log*
 yarn-debug.log*

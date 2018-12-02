@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import firebase from "firebase";
-import config from "./hoverboardConfig";
+import config from "./fireblogConfig";
 import Editor from "./components/Editor";
 import Register from "./components/Register";
 import SignIn from "./components/SignIn";
