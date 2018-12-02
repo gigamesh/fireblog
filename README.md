@@ -9,7 +9,7 @@ Fireblog is a simple blogging platform built with React that uses Firebase for d
 4. Copy web config data from firebase and paste it in fireblogConfig.js (it's in the root directory of the repository):
 
 5. Install and run the [firebase CLI](https://firebase.google.com/docs/cli/):
-   - `npm i -g firebase-tools`
+   - `npm i -g firebase-tools` or `yarn global add firebase-tools`
    - Login to firebase: `firebase login`
    - Run `npm run firestore:init` or `yarn firestore:init`
 
