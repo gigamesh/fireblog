@@ -8,6 +8,9 @@ Fireblog is a simple blogging platform built with React that uses Firebase for d
 3. Sign up for [Firebase](https://firebase.google.com) and create a project.
 4. Copy web config data from firebase and paste it in fireblogConfig.js (it's in the root directory of the repository):
 
+5. Install the [firebase CLI](https://firebase.google.com/docs/web/setup?authuser=0):
+    `npm install firebase --save`
+
 5. Initialize the database in your firebase project:
 
 6. Initialize authentication and choose your sign-in methods (ex: email + password, google, twitter, etc).
