@@ -1,0 +1,53 @@
+{
+  "name": "firebase-blog",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "bootstrap": "^4.1.3",
+    "color": "^3.1.0",
+    "firebaseui": "^3.4.1",
+    "history": "^4.7.2",
+    "markdown-it": "^8.4.2",
+    "markdown-it-deflist": "^2.0.3",
+    "markdown-it-emoji": "^1.4.0",
+    "markdown-it-footnote": "^3.0.1",
+    "markdown-it-sub": "^1.0.0",
+    "markdown-it-sup": "^1.0.0",
+    "moment": "^2.22.2",
+    "node-sass": "^4.10.0",
+    "node-sass-chokidar": "^1.3.4",
+    "npm-run-all": "^4.1.3",
+    "react": "^16.6.3",
+    "react-bootstrap": "^1.0.0-beta.3",
+    "react-dom": "^16.6.3",
+    "react-firebaseui": "^3.1.2",
+    "react-items-carousel": "^2.2.1",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "2.1.1",
+    "react-spinners": "^0.4.7",
+    "styled-components": "^4.1.1",
+    "turndown": "^5.0.1",
+    "turndown-plugin-gfm": "^1.0.2"
+  },
+  "scripts": {
+    "build-css": "node-sass-chokidar --include-path ./src/scss --include-path ./node_modules src/scss/ -o src/scss/",
+    "watch-css": "npm run build-css && node-sass-chokidar --include-path ./src/scss --include-path ./node_modules src/scss/ -o src/scss --watch --recursive",
+    "start-js": "react-scripts start",
+    "start": "npm-run-all -p watch-css start-js",
+    "build": "npm run build-css && react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "devDependencies": {
+    "firebase": "^5.5.8"
+  }
+}
