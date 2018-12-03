@@ -1,8 +1,12 @@
 # Fireblog 🔥
 
-Fireblog is a simple markdown-based blogging platform built with [React](https://reactjs.org) that uses [Firebase](https://firebase.google.com) for data storage and user authentication. It can be easily added to any website.
+Fireblog is a simple markdown-based blogging app built with [React](https://reactjs.org) that uses [Firebase](https://firebase.google.com) for data storage and user authentication. It can be easily added to any website.
 
-[Fireblog demo](https://fireblog-2018.firebaseapp.com/)
+**[Fireblog demo](https://fireblog-2018.firebaseapp.com/)**
+
+**[Editor demo](https://fireblog-2018.firebaseapp.com/editor)**
+
+The `blog` collection in the database hosts the live blog entries. The "save" button saves to the `archive` collection (which acts like a staging area for the editor), while the "publish" button saves to both the `archive` and `blog` collections. The "delete" button deletes from both collections.
 
 ## Getting started:
 

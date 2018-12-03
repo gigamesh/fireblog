@@ -14,6 +14,19 @@ const LoaderWrap = styled.div`
   font-size: 4em;
 `;
 
+const EditBtn = styled(Link)`
+  opacity: 0.4;
+  i {
+    font-size: 2em;
+    padding: 10px;
+  }
+  box-shadow: none;
+  &:hover {
+    box-shadow: none;
+    opacity: 0.7;
+  }
+`;
+
 const PageWrap = styled.div`
   position: relative;
   left: 4%;
@@ -100,25 +113,30 @@ class Home extends React.Component {
         <ClipLoader size={50} />
       </LoaderWrap>
     ) : (
-      <PageWrap>
-        <Header>
-          Fireblog{" "}
-          <span role="img" aria-label="fire">
-            🔥
-          </span>
-        </Header>
-        <ul>
-          {posts.reverse().map(post => (
-            <PostTitle key={post.time}>
-              <Link to={post.source}>
-                <span>{post.published.replace(/-/g, ".")}</span>
-                {" - "}
-                <strong>{post.title}</strong>
-              </Link>
-            </PostTitle>
-          ))}
-        </ul>
-      </PageWrap>
+      <React.Fragment>
+        <EditBtn to="/editor">
+          <i class="fas fa-edit" />
+        </EditBtn>
+        <PageWrap>
+          <Header>
+            Fireblog{" "}
+            <span role="img" aria-label="fire">
+              🔥
+            </span>
+          </Header>
+          <ul>
+            {posts.reverse().map(post => (
+              <PostTitle key={post.time}>
+                <Link to={post.source}>
+                  <span>{post.published.replace(/-/g, ".")}</span>
+                  {" - "}
+                  <strong>{post.title}</strong>
+                </Link>
+              </PostTitle>
+            ))}
+          </ul>
+        </PageWrap>
+      </React.Fragment>
     );
   }
 }

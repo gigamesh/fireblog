@@ -175,7 +175,7 @@ class Header extends React.Component {
     } = this.props;
     const { sideNavOpen } = this.state;
 
-    let dropdownOptions = posts.map(post => {
+    let dropdownOptions = posts.reverse().map(post => {
       let date = moment
         .parseZone(post.published)
         .utc()
