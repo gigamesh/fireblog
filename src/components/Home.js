@@ -15,15 +15,15 @@ const LoaderWrap = styled.div`
 `;
 
 const EditBtn = styled(Link)`
-  opacity: 0.4;
+  opacity: 0.6;
   i {
     font-size: 2em;
-    padding: 10px;
+    padding: 25px;
   }
   box-shadow: none;
   &:hover {
     box-shadow: none;
-    opacity: 0.7;
+    opacity: 0.9;
   }
 `;
 
@@ -53,6 +53,8 @@ const Header = styled.h1`
   font-weight: 500;
   font-size: 5em;
   margin: 0.6em 0;
+  color: #000;
+  user-select: none;
   span {
     font-size: 0.9em;
   }

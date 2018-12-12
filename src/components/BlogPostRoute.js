@@ -34,6 +34,7 @@ class Home extends React.Component {
         postIndex = i;
         return true;
       }
+      return false;
     })[0];
     // console.log("postIndex", postIndex);
     return (

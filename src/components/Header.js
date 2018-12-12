@@ -71,7 +71,7 @@ const ButtonWrapSide = styled.div`
   }
   a {
     display: block;
-    margin-top: 120px;
+    /* margin-top: 120px */
     box-shadow: none;
   }
   a:hover {
