@@ -23,7 +23,7 @@
     "react-firebaseui": "^3.1.2",
     "react-items-carousel": "^2.2.1",
     "react-router-dom": "^4.3.1",
-    "react-scripts": "2.1.1",
+    "react-scripts": "5.0.1",
     "react-spinners": "^0.4.7",
     "styled-components": "^4.1.1",
     "turndown": "^5.0.1",
